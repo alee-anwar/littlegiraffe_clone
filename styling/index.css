@@ -1,0 +1,102 @@
+:root {
+  --color-body-text: #606060;
+  --color-body: #ffffff;
+  --color-bg: #ffffff;
+  --blue: #0090e3;
+  --silver: #cccccc;
+  --fireworks-width: 3px;
+  --fireworks-height: 3px;
+  --fireworks-border: var(--fireworks-width) / 2;
+  --ALERT_DANGER: #ff0000;
+  --ALERT_SUCCESS: #39a706;
+  --ALERT_DEFAULT: #000;
+  --facebookBGColor: rgb(59, 89, 152);
+  --facebookTextColor: rgb(255, 255, 255);
+  --googleplusBGColor: rgb(66, 133, 244);
+  --googleplusTextColor: rgb(255, 255, 255);
+  --twitterBGColor: rgb(0, 172, 237);
+  --twitterTextColor: rgb(255, 255, 255);
+  --amazoneBGColor: rgb(255, 153, 0);
+  --amazoneTextColor: rgb(0, 0, 0);
+  --primaryTingleButtonBGColor: rgb(0, 6, 84);
+  --primaryTingleButtonHoverBGColor: rgb(77, 81, 169);
+  --primaryTingleButtonTextColor: rgb(255, 255, 255);
+  --secondaryTingleButtonBGColor: rgb(0, 6, 84);
+  --secondaryTingleButtonTextColor: rgb(0, 6, 84);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  /* This applies the border-box sizing model to all elements */
+}
+
+/* html { */
+/* min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 14px;
+    background-color: #ffffff; */
+/* -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; */
+/* } */
+
+body {
+ 
+  font-family: "Avenir Next", sans-serif;
+  font-size: 14px;
+  /* font-weight: 300; */
+  /* line-height: 1.5; */
+  /* color: #606060; */
+  /* text-rendering: optimizeLegibility; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+}
+
+/* .index { */
+/* display: flex; */
+/* flex-wrap: wrap; */
+/* } */
+
+.announcement-bar__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #606060;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.25;
+    padding: 0.75em 1em;
+    position: relative;
+    font-size: 14px;
+}
+
+.header {
+    position: relative;
+}
+
+.section {
+    max-width: 1200px;
+    max-width: 1440px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__inner-content {
+    flex: 0 0 auto;
+    align-items: center;
+    padding: 1.5rem 0.75rem 0.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr var(--max_width) 1fr;
+    grid-gap: 20px;
+}
+
