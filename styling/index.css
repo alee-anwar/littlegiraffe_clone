@@ -100,3 +100,69 @@ body {
     grid-gap: 20px;
 }
 
+.visuallyhidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.header__logo {
+    max-width: 350px;
+}
+
+.header__logo-svg svg {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-icons-and-secondary-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-secondary-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #6d6d6d;
+    fill: #6d6d6d;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.header__icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__icon {
+    display: none;
+}
+
+.icon-caption {
+    display: none;
+}
+
+.header-cart__icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: -webkit-max-content;
+    width: max-content;
+    margin: 0 auto;
+}
+
