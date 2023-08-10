@@ -122,71 +122,388 @@
                     transform="translate(-2.27 -1.94)"
                   ></path>
                 </svg>
-                </div>
+              </div>
             </a>
           </div>
 
           <!-- header-icons-and-secondary-menu -->
           <div class="header-icons-and-secondary-menu">
+            <!-- store-locator -->
             <div class="header-secondary-menu">
               <a
                 href="/pages/store-locator"
                 class="navbar-link header__link is-arrowless"
               >
-                Store Locator</a
-              >
+                Store Locator
+              </a>
             </div>
 
             <div
               class="header__icons header__icon-style-icons header__account-icon-style-text"
             >
+              <!-- login -->
               <a
                 href="/account/login"
                 class="header__link header__account-link action-area__link"
               >
-                <span class="icon header__icon" data-icon="avatar">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                    <g id="avatar">
-                      <circle cx="50" cy="42.97" r="18.28"></circle>
-                      <path
-                        d="M50,1A49,49,0,1,0,99,50,49.05,49.05,0,0,0,50,1ZM79.43,78.5a33.73,33.73,0,0,0-58.87,0A41,41,0,1,1,91,50,40.85,40.85,0,0,1,79.43,78.5Z"
-                      ></path>
-                    </g>
-                  </svg>
-                </span>
-                <span class="icon-caption">Login</span></a
-              >
-              <div
-                class="header-cart action-area__link"
-                data-ajax-cart-trigger=""
-              >
+                <span class="icon-caption">Login</span>
+              </a>
+
+              <!-- cart -->
+              <div class="header-cart" data-ajax-cart-trigger="">
                 <a class="header__link" href="/cart">
-                  <span class="header-cart__icon">
-                    <span class="icon header__icon" data-icon="bag">
+                  <span
+                    class="icon header__icon header-cart__icon"
+                    data-icon="bag"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 100 100"
+                    >
+                      <g id="bag">
+                        <path
+                          d="M79.67,28.66H68.77V22.19a18.77,18.77,0,1,0-37.54,0v6.47H20.33L16.41,96.58H83.59ZM38.39,22.19a11.61,11.61,0,0,1,23.22,0v6.47H38.39Z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-and-search-wrapper">
+          <div class="menu-and-search-placeholder"></div>
+
+          <nav
+            class="sticky-menu-wrapper is-align-center"
+            role="navigation"
+            aria-label="main navigation"
+          >
+            <div class="header__menu">
+              <div
+                class="header__menu-items header__dropdown--below-parent dropdown-click--false is-flex is-flex-wrap is-align-center is-justify-center"
+              >
+                <div
+                  class="navbar-item header__item has-dropdown has-dropdown--vertical is-hoverable"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-navlink-handle="baby-blankets"
+                >
+                  <label for="dropdown-baby-blankets">
+                    <a
+                      class="navbar-link header__link"
+                      href="/collections/baby-blankets"
+                    >
+                      Baby Blankets</a
+                    ></label
+                  >
+
+                  <input
+                    class="no-js-main-navigation"
+                    type="radio"
+                    id="dropdown-baby-blankets"
+                    name="no-js-main-navigation"
+                  />
+
+                  <div
+                    class="navbar-dropdown navbar-dropdown--below-parent is-vertical has-medium-vertical-spacing"
+                  >
+                    <a
+                      class="navbar-item"
+                      href="/collections/receiving-blankets"
+                    >
+                      Receiving Blankets</a
+                    >
+                    <a class="navbar-item" href="/collections/baby-blankies">
+                      Blankies</a
+                    >
+                    <a
+                      class="navbar-item"
+                      href="/collections/wearable-blankets"
+                    >
+                      Wearable &amp; Swaddle Blankets</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="navbar-item header__item has-dropdown has-dropdown--vertical is-hoverable"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-navlink-handle="kid-blankets"
+                >
+                  <label for="dropdown-kid-blankets">
+                    <a
+                      class="navbar-link header__link"
+                      href="/collections/back-to-preschool"
+                    >
+                      Kid Blankets</a
+                    ></label
+                  >
+
+                  <input
+                    class="no-js-main-navigation"
+                    type="radio"
+                    id="dropdown-kid-blankets"
+                    name="no-js-main-navigation"
+                  />
+                  <div
+                    class="navbar-dropdown navbar-dropdown--below-parent is-vertical has-medium-vertical-spacing"
+                  >
+                    <a
+                      class="navbar-item"
+                      href="/collections/back-to-preschool"
+                    >
+                      Preschool</a
+                    >
+                    <a class="navbar-item" href="/collections/kid-blankets">
+                      Kid Blankets</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="navbar-item header__item has-dropdown has-dropdown--vertical is-hoverable"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-navlink-handle="gifts"
+                >
+                  <label for="dropdown-gifts">
+                    <a
+                      class="navbar-link header__link"
+                      href="/collections/gifts-all"
+                    >
+                      Gifts</a
+                    ></label
+                  >
+
+                  <input
+                    class="no-js-main-navigation"
+                    type="radio"
+                    id="dropdown-gifts"
+                    name="no-js-main-navigation"
+                  />
+                  <div
+                    class="navbar-dropdown navbar-dropdown--below-parent is-vertical has-medium-vertical-spacing"
+                  >
+                    <a class="navbar-item" href="/collections/baby-gifts">
+                      Baby Gifts</a
+                    >
+                    <a class="navbar-item" href="/collections/gifts-boys">
+                      Gifts for Baby Boys</a
+                    >
+                    <a class="navbar-item" href="/collections/gift-for-girls">
+                      Gift for Baby Girls</a
+                    >
+                    <a
+                      class="navbar-item"
+                      href="/collections/gender-neutral-baby-gifts"
+                    >
+                      Gender Neutral Baby Gifts</a
+                    >
+                    <a class="navbar-item" href="/collections/toddler-gifts">
+                      Toddler Gifts</a
+                    >
+                    <a class="navbar-item" href="/collections/wedding-gifts">
+                      Wedding Gifts</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="navbar-item header__item"
+                  data-navlink-handle="throws"
+                >
+                  <label for="mega-throws">
+                    <a
+                      href="/collections/throws"
+                      class="navbar-link header__link is-arrowless"
+                    >
+                      Throws</a
+                    ></label
+                  >
+                </div>
+                <div
+                  class="navbar-item header__item"
+                  data-navlink-handle="bathtime"
+                >
+                  <label for="mega-bathtime">
+                    <a
+                      href="/collections/baby-towels"
+                      class="navbar-link header__link is-arrowless"
+                    >
+                      Bathtime</a
+                    ></label
+                  >
+                </div>
+                <div
+                  class="navbar-item header__item has-dropdown has-dropdown--vertical is-hoverable"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-navlink-handle="toys"
+                >
+                  <label for="dropdown-toys">
+                    <a
+                      class="navbar-link header__link"
+                      href="/collections/toys"
+                    >
+                      Toys</a
+                    ></label
+                  >
+
+                  <input
+                    class="no-js-main-navigation"
+                    type="radio"
+                    id="dropdown-toys"
+                    name="no-js-main-navigation"
+                  />
+                  <div
+                    class="navbar-dropdown navbar-dropdown--below-parent is-vertical has-medium-vertical-spacing"
+                  >
+                    <a class="navbar-item" href="/collections/plush-toys">
+                      Plush Toys</a
+                    >
+                    <a class="navbar-item" href="/collections/teething-toys">
+                      Teething Toys</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="navbar-item header__item has-dropdown has-dropdown--vertical is-hoverable"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-navlink-handle="pillows"
+                >
+                  <label for="dropdown-pillows">
+                    <a
+                      class="navbar-link header__link"
+                      href="/collections/baby-pillows"
+                    >
+                      Pillows</a
+                    ></label
+                  >
+
+                  <input
+                    class="no-js-main-navigation"
+                    type="radio"
+                    id="dropdown-pillows"
+                    name="no-js-main-navigation"
+                  />
+                  <div
+                    class="navbar-dropdown navbar-dropdown--below-parent is-vertical has-medium-vertical-spacing"
+                  >
+                    <a class="navbar-item" href="/collections/baby-pillows">
+                      Baby Pillows</a
+                    >
+                    <a class="navbar-item" href="/collections/throw-pillows">
+                      Throw Pillows</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="navbar-item header__item"
+                  data-navlink-handle="robes"
+                >
+                  <label for="mega-robes">
+                    <a
+                      href="/collections/robes"
+                      class="navbar-link header__link is-arrowless"
+                    >
+                      Robes</a
+                    ></label
+                  >
+                </div>
+                <div
+                  class="navbar-item header__item has-dropdown has-dropdown--vertical is-hoverable"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-navlink-handle="new"
+                >
+                  <label for="dropdown-new">
+                    <a
+                      class="navbar-link header__link"
+                      href="/collections/new-arrivals"
+                    >
+                      New</a
+                    ></label
+                  >
+
+                  <input
+                    class="no-js-main-navigation"
+                    type="radio"
+                    id="dropdown-new"
+                    name="no-js-main-navigation"
+                  />
+                  <div
+                    class="navbar-dropdown navbar-dropdown--below-parent is-vertical has-medium-vertical-spacing"
+                  >
+                    <a class="navbar-item" href="/collections/new-arrivals">
+                      New Arrivals</a
+                    >
+                    <a class="navbar-item" href="/collections/best-sellers">
+                      Best Sellers</a
+                    >
+                    <a
+                      class="navbar-item"
+                      href="/collections/muse-faux-cashmere"
+                    >
+                      Muse™ Faux Cashmere</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="navbar-item header__item"
+                  data-navlink-handle="sale"
+                >
+                  <label for="mega-sale">
+                    <a
+                      href="/collections/sale"
+                      class="navbar-link header__link is-arrowless"
+                    >
+                      Sale</a
+                    ></label
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header__search">
+            <form class="header__search-form search-form" action="/search">
+              <div class="field has-addons">
+                
+                <div class="control header__search-bar is-relative">
+                  <input
+                    class="input"
+                    type="text"
+                    name="q"
+                    placeholder="Search"
+                    value=""
+                    x-webkit-speech=""
+                    autocapitalize="off"
+                    autocomplete="off"
+                    autocorrect="off"
+                    data-q=""
+                    aria-label="Search"
+                  />
+                </div>
+                <div class="control">
+                  <button class="button header__search-button">
+                    <span class="icon" data-icon="search">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 100 100"
                       >
-                        <g id="bag">
+                        <g id="search">
                           <path
-                            d="M79.67,28.66H68.77V22.19a18.77,18.77,0,1,0-37.54,0v6.47H20.33L16.41,96.58H83.59ZM38.39,22.19a11.61,11.61,0,0,1,23.22,0v6.47H38.39Z"
+                            d="M92.83,90.18,71.47,68.83a38.58,38.58,0,1,0-6.29,5l22,22ZM14,41.46A30.47,30.47,0,1,1,44.47,71.93,30.51,30.51,0,0,1,14,41.46Z"
                           ></path>
                         </g>
                       </svg>
                     </span>
-                    <span
-                      class="header-cart__count header-cart__count--badge badge"
-                      data-bind="itemCount"
-                    >
-                      0</span
-                    ></span
-                  >
-                  <span class="header-cart__caption icon-caption">
-                    Cart
-                  </span></a
-                >
+                  </button>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </section>
